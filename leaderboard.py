@@ -44,7 +44,7 @@ def update_leaderboard(file_name, leader_names, leader_scores, player_name, play
 
     while (leader_index < len(leader_scores)):
       # TODO 6: check if this is the position to insert new score at
-      if (player_score >= leader_scores[leader_index]):
+      if int(player_score >= leader_scores[leader_index]):
         break
       else:
         leader_index = leader_index + 1
